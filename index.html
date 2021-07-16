@@ -5,7 +5,6 @@
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
     </head>
     <body id="container">
-    <!-- partial:index.partial.html -->
     <canvas id="myCanvas" width="1950" height="500" style="border:1px solid #010101;background-color: black"></canvas>
     <div id="player">
       <div id="music-player">
@@ -39,11 +38,9 @@
                 buttons.play.disabled = true;
             }, false);
 
-            // Handle Pause button
             buttons.pause.addEventListener("click", function(){
                 Spectrum.pause();
 
-                // Enable/Disable respectively buttons
                 buttons.pause.disabled = true;
                 buttons.play.disabled = false;
             }, false);
